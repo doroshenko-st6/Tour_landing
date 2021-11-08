@@ -133,12 +133,18 @@ html
         align-items: center
         justify-content: space-between
 .text-block__dark
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     max-width: 404px
     color: #868686
     & .text-block__subtitle
         margin-top: 50px
-.button__location
-    padding: 15px 86px
+    & .button__location
+        display: flex
+        justify-content: center
+        align-items: center
+        max-width: 272px
 
 .location-slider
     width: 50%
