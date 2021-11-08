@@ -1,0 +1,184 @@
+@import fonts
+@import reset
+@import media
+
+html
+    font-family: "Roboto"
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+
+.container
+    width: 100%
+    max-width: 1170px
+    margin: 0 auto
+    padding-left: 10px
+    padding-right: 10px
+
+.header
+    padding: 30px 0
+    border-bottom: 20px solid #d7d7d7
+    &-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        line-height: 1
+        &__logo
+            font-family: "KaushanScript"
+            font-size: 48px
+            color: #3ec6ff
+            padding: 10px
+.nav
+    font-size: 18px
+    &-list
+        display: flex
+        align-items: center
+        & li
+            margin-left: 42px
+            display: flex
+            align-items: center
+            transition: .1s
+            &:last-child
+                background-color: #3ec6ff
+                color: #000
+                &:hover
+                    background-color: (lighten(#3ec6ff, 5%))
+                    color: #fff
+        & li:first-child
+            margin-left: 0
+        &__link
+            padding: 7px
+            transition: .3s
+            border-bottom: 2px solid #00000000
+            .login-icon
+                margin-right: 15px
+        &__link:hover
+            border-bottom: 2px solid #3ec6ff
+
+.main
+    background-image: url("../img/hero_img2.png")
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    border-bottom: 20px solid #d7d7d7
+    padding: 230px 0
+.text-block 
+    color: #fff
+    max-width: 390px
+    & > *:last-child
+        margin-top: 50px
+    &__title
+        font-weight: 700
+        font-size: 48px
+    &__subtitle
+        font-weight: 400
+        font-size: 16px
+
+.search-form > *
+    min-height: 50px
+.search-form
+    margin-top: 80px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-size: 16px
+.input
+    display: inline
+    background-color: #fff
+    border-radius: 5px !important
+    padding-left: 30px
+    padding-right: 158px
+    min-height: 50px
+    &::placeholder
+        color: #b7b7b7
+.select
+    background: url('../img/icons/arrow_icn.png') no-repeat right #fff
+    background-position: 230px
+    font-family: "Roboto"
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    color: #b7b7b7
+    border: none
+    border-radius: 5px
+    padding-left: 30px
+    padding-right: 119px
+.number
+    min-height: 50px
+    background-color: #fff
+    border-radius: 5px !important
+    padding-right: 58px
+    ::placeholder
+        color: #b7b7b7
+.button
+    color: #fff
+    font-family: "Roboto"
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    border-radius: 5px
+    background-color: #3ec6ff
+    transition: .3s
+    min-height: 50px
+    &:hover
+        background-color: (lighten(#3ec6ff, 5%))
+    &__search
+        padding: 0 60px
+        
+
+.location
+    padding: 50px 0 60px 0
+    &-content
+        display: flex
+        // flex-direction: column
+        align-items: center
+        justify-content: space-between
+.text-block__dark
+    max-width: 404px
+    color: #868686
+    & .text-block__subtitle
+        margin-top: 50px
+.button__location
+    padding: 15px 86px
+
+.location-slider
+    width: 50%
+    display: flex
+    justify-content: space-between
+    &__img
+        height: 420px
+        max-width: 270px !important
+        padding: 0 14px
+        box-sizing: content-box
+          
+
+.slick-slide:focus 
+    outline: none
+.slick-slide 
+    position: relative
+.slick-dots 
+    position: absolute
+    top: calc( 100% + 40px )
+    left: 0
+    transform: translate(0, -50%)
+    display: flex
+    align-items: center
+    z-index: 99
+    & li
+        margin-left: 10px
+        &:first-child
+            margin-left: 0
+.slick-dots button 
+    width: 12px
+    height: 12px
+    font-size: 0
+    transition: .3s
+    background-color: #d9d9d9
+    border: 2px solid #d9d9d900
+    border-radius: 50%
+.slick-active button
+    background-color: #d9d9d900
+    border: 2px solid #63d0fd
+    transform: scale(1.4)
+        
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take_me</title>
+    <link rel="stylesheet" type="text/css" href="./css/libs/slick.css"/>
+    <!-- <link rel="stylesheet" href="css/libs/animate.min.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a4898a2239.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="header-content__logo">TakeMe</a>
+                <div class="nav nav-mobile">
+                    <ul class="nav-list">
+                        <li>
+                            <a class="nav-list__link" href="#anchor1">Locations</a>
+                        </li>
+                        <li>
+                            <a class="nav-list__link" href="#anchor2">Accommodation</a>
+                        </li>
+                        <li>
+                            <a class="nav-list__link" href="#anchor3">Travel Guides</a>
+                        </li>
+                        <li>
+                            <a class="nav-list__link" href="#anchor4">Where To Stay</a>
+                        </li>
+                        <li>
+                            <a class="nav-list__link" href="#anchor5">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="nav-list__link" id="login" href="#">
+                                <i class="fas fa-sign-in-alt login-icon"></i>
+                                Log In
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <div class="main-content">
+                <div class="text-block">
+                    <h1 class="text-block__title">Find Your Dream Vacation Location</h1>
+                    <p class="text-block__subtitle">Search hundreds of locations from around the world and find your perfect vacation location.</p>
+                </div>
+                <form class="search-form">
+                    <input class="input" type="text" placeholder="Country or ZIP code">
+                    <select class="select">
+                        <option value="1" class="option">Transportation</option>
+                        <option value="2" class="option">Transportation_2</option>
+                        <option value="3" class="option">Transportation_3</option>
+                    </select>
+                    <input class="input number" type="number" placeholder="Number of people">
+                    <button class="button button__search" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="location">
+        <div class="container">
+            <div class="location-content">
+                <div class="text-block text-block__dark">
+                    <h1 class="text-block__title">Magical Santorini Greece’s Jewel</h1>
+                    <p class="text-block__subtitle">Candy-colored houses carved into cliffs, sapphire waters, 
+                        gleaming white buildings topped with half-spheres 
+                        the color of a stormy sky.
+                    </p>
+                    <div>
+                        <a href="#" class="button button__location">Explore Mode</a>
+                    </div>
+                </div>
+                <div class="location-slider">
+                    <img src="./img/slider1.png" alt="img" class="location-slider__img">
+                    <img src="./img/slider2.png" alt="img" class="location-slider__img">
+                    <img src="./img/slider1.png" alt="img" class="location-slider__img">
+                    <img src="./img/slider2.png" alt="img" class="location-slider__img">
+                    <img src="./img/slider1.png" alt="img" class="location-slider__img">
+                    <img src="./img/slider2.png" alt="img" class="location-slider__img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/libs/jquery-3.6.0.min.js"></script>
+    <script src="./js/libs/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
