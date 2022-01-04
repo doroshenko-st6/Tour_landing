@@ -1,0 +1,57 @@
+@media screen and (max-width: 1280px)
+    body.lock
+        overflow: hidden
+    .container
+        max-width: 980px
+    .header
+        &__logo
+            font-size: 40px
+            padding: 5px
+        &__body
+            height: 70px
+        &__burger
+            display: block
+            position: relative
+            width: 30px
+            height: 20px
+            z-index: 3
+            &::before, &::after, span
+                position: absolute
+                left: 0
+                content: ''
+                background-color: $blue
+                width: 100%
+                height: 2px
+                transition: all .3s ease 0s
+            & span
+                top: 50%
+                transform: translate(0,-50%)
+                transition: all .3s ease 0s
+            &::before
+                top: 0
+            &::after
+                bottom: 0
+        &__burger.active::before
+            transform: rotate(45deg)
+            top: 9px
+        &__burger.active::after
+            transform: rotate(-45deg)
+            bottom: 9px
+        &__burger.active span
+            transform: scale(0)
+        &__menu
+            position: fixed
+            top: -100%
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: #fff
+            opacity: .96
+            padding-top: 100px
+            color: $blue
+            transition: all .4s ease 0s
+            overflow: auto
+            &.active
+                top: 0
+        &__list
+            font-size: 21px
